@@ -1,0 +1,76 @@
+:root {
+    --padding-menu-bar: 3vh
+}
+
+.Sidebar {
+    /* positions the meny bar in the center, vertically */
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-70%);
+    /* width of the menu bar */
+    width: 20vh;
+    height: auto;
+
+}
+
+/* Setting the height of the list to auto, padding to 0, width to 100%, fill to rgb(207, 196, 196), and
+justify-content to center. */
+.SidebarList {
+    height: auto;
+    padding: 0;
+    width: 100%;
+    fill: rgb(207, 196, 196);
+    justify-content: center;
+}
+
+/* Setting the width and height of the list to 100%, the margin to 0, the display to flex, the
+flex-direction to row, the justify-content to center, the vertical-align to middle, the align-items
+to center, the font-family to Segoe UI, Tahoma, Geneva, Verdana, sans-serif, and the
+background-color to #0a4f6c. */
+.SidebarList .row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Changing the background color of the list when the mouse is hovering over it. */
+/* .SidebarList :hover {
+    background-color: #04374d;
+    cursor: pointer;
+} */
+
+/* Setting the width of the icon to 30% of the width of the list. */
+.row #icon {
+    flex: 30%;
+    opacity: 100%;
+}
+
+.row #icon :hover {
+    fill: #04374d;
+    cursor: pointer;
+}
+
+/* Setting the width of the title to 70% of the row, the color to white, the font-size to 1.5em,
+the text-align to center, and the place-items to center. */
+.row #title
+{
+    flex: 70%;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    place-items: center;
+}
+
+/* Setting the opacity of the title to 50% when the mouse is hovering over it. */
+.row #title :hover
+{
+    opacity: 50%;
+}
